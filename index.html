@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jet Wave - Jet Ski Rental Korčula</title>
+    <meta
+      name="description"
+      content="Jet Wave is an adventure center for jet ski rental in Korčula, with locations in La Banya and Put Sv. Nikole 38."
+    />
+    <meta
+      name="keywords"
+      content="jet ski rental, korčula, croatia, sea doo, adventure, water sports"
+    />
+    <meta name="author" content="Jet Wave" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Jet Wave Korčula" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="en" href="?lang=en" />
+    <link rel="alternate" hreflang="hr" href="?lang=hr" />
+    <link rel="alternate" hreflang="x-default" href="?lang=en" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo" aria-label="Jet Wave home">
+          <img src="assets/logo.png" alt="Jet Wave logo" />
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#team" data-i18n="nav.team">Team</a></li>
+          <li><a href="#models" data-i18n="nav.models">Models</a></li>
+          <li><a href="#prices" data-i18n="nav.prices">Prices</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="language-switcher inline">
+            <button class="lang-link" data-lang="en">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-link" data-lang="hr">HR</button>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <video
+          class="hero-video"
+          src="assets/jets-riding.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-up" data-aos-delay="400">
+          <img class="hero-logo" src="assets/logo.png" alt="Jet Wave logo" />
+          <p class="hero-slogan">Experience the Adriatic in Style</p>
+          <button
+            class="cta-button"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-i18n="hero.cta"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content" data-aos="fade-up">
+          <h2 data-i18n="about.title">About Jet Wave</h2>
+          <p data-i18n="about.description">
+            Jet Wave is an adventure center for jet ski rental in Korčula, with
+            locations in La Banya and Put Sv. Nikole 38. Our offer includes
+            top-quality Sea-Doo jet ski models and a speedboat, ready for your
+            sea adventure. With professional service and the beautiful nature of
+            Korčula, Jet Wave guarantees an unforgettable experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+      <div class="container">
+        <h2 class="section-title" data-i18n="team.title">Our Team</h2>
+        <div class="team-grid">
+          <!-- Filip Card -->
+          <article
+            class="team-card flip"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img
+                  class="team-photo"
+                  src="assets/team/filip-rakocevic.png"
+                  alt="Filip Rakočević"
+                />
+                <div class="team-front-text">
+                  <h3 class="team-name">Filip Rakočević</h3>
+                </div>
+              </div>
+              <div class="flip-back">
+                <h3 class="team-name">Filip Rakočević</h3>
+                <p class="team-role" data-i18n="team.filip.title">
+                  The Captain of Adrenaline
+                </p>
+                <p class="team-bio" data-i18n="team.filip.bio">
+                  When you sit on one of our jet skis, you’ll feel both the
+                  thrill and the safety of having someone by your side who truly
+                  lives the sea. Filip – or Fila, as everyone calls him –
+                  graduated in kinesiology and has been dominating the water
+                  polo arena for KPK for years. His passion for sport and the
+                  ocean flows directly into Jet Wave, where he gives every rider
+                  clear instructions and the confidence to get the most out of
+                  their ride. And when he’s not chasing waves, you’ll find him
+                  aiming for bullseyes at the dartboard – always with that same
+                  winning spirit.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gabrijel Card -->
+          <article
+            class="team-card flip"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img
+                  class="team-photo"
+                  src="assets/team/gabrijel-skokandic.png"
+                  alt="Gabrijel Skokandić"
+                />
+                <div class="team-front-text">
+                  <h3 class="team-name">Gabrijel Skokandić</h3>
+                </div>
+              </div>
+              <div class="flip-back">
+                <h3 class="team-name">Gabrijel Skokandić</h3>
+                <p class="team-role" data-i18n="team.gabrijel.title">
+                  The Master of the Waves
+                </p>
+                <p class="team-bio" data-i18n="team.gabrijel.bio">
+                  For Gabrijel, the sea is not just a hobby – it’s a calling. A
+                  student at VERN University in Zagreb, a licensed skipper, and
+                  a seasoned guide, Gabrijel knows every cove, every hidden
+                  beach, and every sea tale of Korčula. He has led everything
+                  from intimate private tours to high-adrenaline adventures.
+                  With years of experience navigating speedboats and yachts,
+                  you’ll be in expert hands as he shows you the coast from a
+                  perspective you’ve always dreamed of.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="team-why" data-aos="fade-up" data-aos-delay="350">
+          <h3 data-i18n="team.why.title">Why choose us?</h3>
+          <p data-i18n="team.why.copy">
+            Because with Jet Wave, you’re not just renting a jet ski – you’re
+            booking an experience. Passion, safety, and pure adventure, all in a
+            single unforgettable day.
+          </p>
+        </div>
+
+        <div class="team-cta" data-aos="fade-up" data-aos-delay="450">
+          <a href="#contact" class="cta-button" data-i18n="team.cta"
+            >Ride with the pros</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Jet Models Section -->
+    <section id="models" class="models">
+      <div class="container">
+        <h2 class="section-title" data-i18n="models.title">Our Models</h2>
+
+        <!-- Desktop Carousel -->
+        <div class="models-carousel" aria-label="Jet models carousel">
+          <div class="carousel-item" data-model="0">
+            <div class="carousel-image">
+              <img
+                class="ride-wave smooth"
+                src="assets/models/sea-doo-rxt-x-rs300-zuti.png"
+                alt="Sea Doo RXT-X RS 300 Black & Yellow"
+              />
+            </div>
+            <div class="carousel-info">
+              <h3 data-i18n="models.seaDooRXTX300">Sea Doo RXT-X RS 300</h3>
+              <p class="model-year" data-i18n="models.year">2023</p>
+              <p class="model-color" data-i18n="models.blackYellow">
+                Black & Yellow
+              </p>
+              <p class="model-specs" data-i18n="models.specs.rxtx300">
+                1630cc, 300 HP
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-model="1">
+            <div class="carousel-image">
+              <img
+                class="ride-wave smooth"
+                src="assets/models/sea-doo-rtx-x-rs300--crni.png"
+                alt="Sea Doo RXT-X RS 300 Black"
+              />
+            </div>
+            <div class="carousel-info">
+              <h3 data-i18n="models.seaDooRXTX300">Sea Doo RXT-X RS 300</h3>
+              <p class="model-year" data-i18n="models.year">2023</p>
+              <p class="model-color" data-i18n="models.black">Black</p>
+              <p class="model-specs" data-i18n="models.specs.rxtx300">
+                1630cc, 300 HP
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-model="2">
+            <div class="carousel-image">
+              <img
+                class="ride-wave smooth"
+                src="assets/models/sea-doo-gti-se-130.webp"
+                alt="Sea Doo GTI SE 130 White"
+              />
+            </div>
+            <div class="carousel-info">
+              <h3 data-i18n="models.seaDooGTI130">Sea Doo GTI 130</h3>
+              <p class="model-year" data-i18n="models.year">2023</p>
+              <p class="model-color" data-i18n="models.white">White</p>
+              <p class="model-specs" data-i18n="models.specs.gti130">130 HP</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Stacked Alternating Rows -->
+        <div class="models-stacked" aria-label="Jet models list">
+          <div class="jet-row from-left">
+            <div class="jet-image">
+              <img
+                class="ride-wave smooth"
+                src="assets/models/sea-doo-rxt-x-rs300-zuti.png"
+                alt="Sea Doo RXT-X RS 300 Black & Yellow"
+              />
+            </div>
+            <div class="jet-info">
+              <h3 data-i18n="models.seaDooRXTX300">Sea Doo RXT-X RS 300</h3>
+              <p class="model-year" data-i18n="models.year">2023</p>
+              <p class="model-color" data-i18n="models.blackYellow">
+                Black & Yellow
+              </p>
+              <p class="model-specs" data-i18n="models.specs.rxtx300">
+                1630cc, 300 HP
+              </p>
+            </div>
+          </div>
+          <div class="jet-row from-right">
+            <div class="jet-image">
+              <img
+                class="ride-wave smooth"
+                src="assets/models/sea-doo-rtx-x-rs300--crni.png"
+                alt="Sea Doo RXT-X RS 300 Black"
+              />
+            </div>
+            <div class="jet-info">
+              <h3 data-i18n="models.seaDooRXTX300">Sea Doo RXT-X RS 300</h3>
+              <p class="model-year" data-i18n="models.year">2023</p>
+              <p class="model-color" data-i18n="models.black">Black</p>
+              <p class="model-specs" data-i18n="models.specs.rxtx300">
+                1630cc, 300 HP
+              </p>
+            </div>
+          </div>
+          <div class="jet-row from-left">
+            <div class="jet-image">
+              <img
+                class="ride-wave smooth"
+                src="assets/models/sea-doo-gti-se-130.webp"
+                alt="Sea Doo GTI SE 130 White"
+              />
+            </div>
+            <div class="jet-info">
+              <h3 data-i18n="models.seaDooGTI130">Sea Doo GTI 130</h3>
+              <p class="model-year" data-i18n="models.year">2023</p>
+              <p class="model-color" data-i18n="models.white">White</p>
+              <p class="model-specs" data-i18n="models.specs.gti130">130 HP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prices Section -->
+    <section id="prices" class="prices">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="prices.title">
+          Prices & Information
+        </h2>
+        <div class="prices-grid" data-aos="fade-up" data-aos-delay="300">
+          <div class="price-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="price-header">
+              <h3 data-i18n="prices.thirtyMin">30 minutes</h3>
+            </div>
+            <div class="price-amount">
+              <span class="currency">€</span>
+              <span class="amount">80</span>
+            </div>
+            <ul class="price-features">
+              <li>
+                Perfect for a quick adrenaline rush and testing the jet skis
+              </li>
+              <li>Great for beginners who want to experience the ride</li>
+              <li>
+                A short tour around the most beautiful parts of the coastline
+              </li>
+            </ul>
+          </div>
+          <div
+            class="price-card featured"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="price-header">
+              <h3 data-i18n="prices.oneHour">1 hour</h3>
+              <span class="popular" data-i18n="prices.mostPopular"
+                >Most Popular</span
+              >
+            </div>
+            <div class="price-amount">
+              <span class="currency">€</span>
+              <span class="amount">150</span>
+            </div>
+            <ul class="price-features">
+              <li>Plenty of time to explore multiple bays and beaches</li>
+              <li>
+                Ideal for combining high-speed fun with moments of relaxation
+              </li>
+              <li>More freedom to create your own route</li>
+            </ul>
+          </div>
+          <div class="price-card" data-aos="fade-up" data-aos-delay="800">
+            <div class="price-header">
+              <h3 data-i18n="prices.custom">Custom</h3>
+            </div>
+            <div class="price-amount">
+              <span class="custom" data-i18n="prices.onRequest"
+                >On request</span
+              >
+            </div>
+            <ul class="price-features">
+              <li>Extended rides for a full exploration experience</li>
+              <li>Option for private tours and visits to hidden locations</li>
+              <li>Flexible schedule tailored to your wishes and plans</li>
+            </ul>
+          </div>
+        </div>
+        <div class="insurance-note" data-aos="fade-up" data-aos-delay="1000">
+          <i class="fas fa-shield-alt"></i>
+          <p data-i18n="prices.insurance">All jet skis are fully insured.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-i18n="contact.title">
+          Contact Us
+        </h2>
+        <div class="contact-content">
+          <div class="contact-details" data-aos="fade-right">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <p>
+                  <a href="tel:+385995937211">+385 99 5937 211 (Filip)</a>
+                  <br />
+                  <a href="tel:+385981349443">+385 98 134 9443 (Gabrijel)</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <p>
+                  <a href="https://wa.me/385995937211" target="_blank"
+                    >+385 99 5937 211</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="far fa-envelope"></i>
+              <div>
+                <p>
+                  <a href="mailto:filiprak5@gmail.com">filiprak5@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-instagram"></i>
+              <div>
+                <p>
+                  <a
+                    href="https://www.instagram.com/jet_wave_korcula"
+                    target="_blank"
+                    >@jet_wave_korcula</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="far fa-map"></i>
+              <div>
+                <p>Put Sv. Nikole 38 or La Banya</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="far fa-clock"></i>
+              <div>
+                <p>08:00 - 20:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-container" data-aos="fade-left">
+            <iframe
+              src="https://www.google.com/maps?q=La+Banya+Korčula&output=embed"
+              width="100%"
+              height="360"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Jet Wave</h3>
+            <p data-i18n="footer.tagline">Jet Ski Rental in Korčula</p>
+          </div>
+          <div class="footer-links">
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#team" data-i18n="nav.team">Team</a>
+            <a href="#models" data-i18n="nav.models">Models</a>
+            <a href="#prices" data-i18n="nav.prices">Prices</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Jet Wave.
+            <span data-i18n="footer.rights">All rights reserved.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
