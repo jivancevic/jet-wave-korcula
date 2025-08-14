@@ -26,7 +26,7 @@ const i18n = {
       hero: {
         title: "Jet Wave",
         subtitle: "Jet Ski Rental in Korčula",
-        cta: "Contact Us",
+        cta: "Book Now",
       },
 
       // About Section
@@ -138,7 +138,7 @@ const i18n = {
       hero: {
         title: "Jet Wave",
         subtitle: "Najam jet skija u Korčuli",
-        cta: "Kontaktirajte nas",
+        cta: "Rezerviraj",
       },
 
       // About Section

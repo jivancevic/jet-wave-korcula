@@ -2,17 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jet Wave - Jet Ski Rental Korčula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Canonical + hreflang -->
+    <link rel="canonical" href="https://jetwavekorcula.com/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://jetwavekorcula.com/?lang=en"
+    />
+    <link
+      rel="alternate"
+      hreflang="hr"
+      href="https://jetwavekorcula.com/?lang=hr"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://jetwavekorcula.com/?lang=en"
+    />
+
+    <!-- Primary SEO Meta -->
+    <title>Jet Wave – Jet Ski Rental in Korčula</title>
     <meta
       name="description"
-      content="Jet Wave is an adventure center for jet ski rental in Korčula, with locations in La Banya and Put Sv. Nikole 38."
+      content="Jet Wave offers premium Jet Ski rental in Korčula, Sea‑Doo models, and boat tours from La Banya and Put Sv. Nikole 38. Book your adrenaline ride and discover Korčula’s coast in style."
     />
     <meta
       name="keywords"
-      content="jet ski rental, korčula, croatia, sea doo, adventure, water sports"
+      content="Jet Ski Korčula, Jet Ski La Banya, Jet Ski rental Korčula, Rent a jet ski Korčula, Sea Doo rental Korčula, Jet ski hire Korčula Croatia, Boat rental Korčula, Rent a boat Korčula"
     />
-    <meta name="author" content="Jet Wave" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jet Wave – Jet Ski Rental in Korčula" />
+    <meta
+      property="og:description"
+      content="Jet Wave offers premium Jet Ski and boat rental in Korčula. Book your adrenaline ride and experience the Adriatic in style."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jetwavekorcula.com/" />
+    <meta property="og:site_name" content="Jet Wave Korčula" />
+    <meta
+      property="og:image"
+      content="https://jetwavekorcula.com/assets/logo.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Jet Wave — Jet Ski Rental in Korčula"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jet Wave – Jet Ski Rental in Korčula" />
+    <meta
+      name="twitter:description"
+      content="Jet Ski and boat rentals in Korčula with Jet Wave. Sea‑Doo models @ La Banya & Put Sv. Nikole 38."
+    />
+    <meta
+      name="twitter:image"
+      content="https://jetwavekorcula.com/assets/logo.png"
+    />
+
+    <!-- Social Profile (rel=me) -->
+    <link rel="me" href="https://www.instagram.com/jet_wave_korcula" />
+
+    <!-- App Icons & Favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -28,28 +83,75 @@
     />
     <meta name="apple-mobile-web-app-title" content="Jet Wave Korčula" />
     <link rel="manifest" href="assets/favicons/site.webmanifest" />
-    <link rel="icon" href="favicon.ico" />
-    <!-- Language alternatives -->
-    <link rel="alternate" hreflang="en" href="?lang=en" />
-    <link rel="alternate" hreflang="hr" href="?lang=hr" />
-    <link rel="alternate" hreflang="x-default" href="?lang=en" />
 
+    <!-- Sitemap hint -->
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="/sitemap.xml"
+    />
+
+    <!-- Styles & Libraries -->
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Jet Wave - Jet Ski & Boat Rental Korčula",
+        "image": "https://jetwavekorcula.com/assets/logo.png",
+        "url": "https://jetwavekorcula.com",
+        "telephone": "+385995937211",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Put Sv. Nikole 38",
+          "addressLocality": "Korčula",
+          "addressCountry": "HR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.962693,
+          "longitude": 17.130717
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ],
+        "sameAs": ["https://www.instagram.com/jet_wave_korcula"],
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Card",
+        "areaServed": "Korčula, Croatia",
+        "makesOffer": [
+          { "@type": "Offer", "name": "Jet ski rental" },
+          { "@type": "Offer", "name": "Sea-Doo rentals" },
+          { "@type": "Offer", "name": "Boat tours" }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Navigation -->
@@ -59,19 +161,63 @@
           <img src="assets/logo.png" alt="Jet Wave logo" />
         </a>
         <ul class="nav-menu">
-          <li><a href="#about" data-i18n="nav.about">About</a></li>
-          <li><a href="#team" data-i18n="nav.team">Team</a></li>
-          <li><a href="#models" data-i18n="nav.models">Models</a></li>
-          <li><a href="#prices" data-i18n="nav.prices">Prices</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li>
+            <a
+              href="#about"
+              aria-label="About Jet Wave — Jet Ski Korčula"
+              data-i18n="nav.about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#team"
+              aria-label="Jet Wave Team in Korčula"
+              data-i18n="nav.team"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="#models"
+              aria-label="Sea‑Doo Jet Ski Models in Korčula"
+              data-i18n="nav.models"
+              >Models</a
+            >
+          </li>
+          <li>
+            <a
+              href="#prices"
+              aria-label="Jet Ski Prices & Information in Korčula"
+              data-i18n="nav.prices"
+              >Prices</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              aria-label="Contact Jet Wave & Find Us in Korčula"
+              data-i18n="nav.contact"
+              >Contact</a
+            >
+          </li>
         </ul>
         <div class="nav-right">
           <div class="language-switcher inline">
-            <button class="lang-link" data-lang="en">EN</button>
+            <button class="lang-link" data-lang="en" aria-label="English">
+              EN
+            </button>
             <span class="lang-sep">|</span>
-            <button class="lang-link" data-lang="hr">HR</button>
+            <button class="lang-link" data-lang="hr" aria-label="Hrvatski">
+              HR
+            </button>
           </div>
-          <div class="hamburger">
+          <div
+            class="hamburger"
+            aria-label="Open menu"
+            role="button"
+            tabindex="0"
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -79,30 +225,44 @@
         </div>
       </div>
     </nav>
-    <div class="nav-backdrop" id="navBackdrop"></div>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" aria-label="Jet Ski Rental Korčula">
+      <!-- Primary H1 for SEO — visually preserved via CSS -->
+      <h1
+        style="
+          position: absolute;
+          left: -9999px;
+          top: auto;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+        "
+      >
+        Jet Ski Rental in Korčula – Jet Wave
+      </h1>
       <div class="hero-background">
-        <video class="hero-video" autoplay muted loop playsinline>
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/sea-poster.png">
           <source src="assets/jets-riding.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="hero-content">
         <div class="hero-text" data-aos="fade-up" data-aos-delay="400">
-          <img class="hero-logo" src="assets/logo.png" alt="Jet Wave logo" />
+          <img class="hero-logo" src="assets/logo.png" alt="Jet Wave — Jet Ski La Banya & Put Sv. Nikole 38" loading="lazy" />
           <p class="hero-slogan">Experience the Adriatic in Style</p>
           <button
             class="cta-button"
             data-aos="fade-up"
             data-aos-delay="800"
             data-i18n="hero.cta"
+            aria-label="Book Jet Ski in Korčula"
           >
-            Contact Us
+            Book Now
           </button>
         </div>
       </div>
-      <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+      <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200" aria-hidden="true">
         <i class="fas fa-chevron-down"></i>
       </div>
     </section>
@@ -111,7 +271,7 @@
     <section id="about" class="about">
       <div class="container">
         <div class="about-content" data-aos="fade-up">
-          <h2 data-i18n="about.title">About Jet Wave</h2>
+          <h2 aria-label="About Jet Wave Korčula - Jet Ski & Boat Rental" data-i18n="about.title">About Jet Wave</h2>
           <p data-i18n="about.description">
             Jet Wave is an adventure center for jet ski rental in Korčula, with
             locations in La Banya and Put Sv. Nikole 38. Our offer includes
@@ -126,7 +286,7 @@
     <!-- Team Section -->
     <section id="team" class="team">
       <div class="container">
-        <h2 class="section-title" data-i18n="team.title">Our Team</h2>
+        <h2 class="section-title" aria-label="Jet Ski Tours & Adventures in Korčula — Our Team" data-i18n="team.title">Our Team</h2>
         <div class="team-grid">
           <!-- Filip Card -->
           <article
@@ -139,7 +299,8 @@
                 <img
                   class="team-photo"
                   src="assets/team/filip-rakocevic.png"
-                  alt="Filip Rakočević"
+                  alt="Filip Rakočević — Jet Wave Korčula"
+                  loading="lazy"
                 />
                 <div class="team-front-text">
                   <h3 class="team-name">Filip Rakočević</h3>
@@ -177,7 +338,8 @@
                 <img
                   class="team-photo"
                   src="assets/team/gabrijel-skokandic.png"
-                  alt="Gabrijel Skokandić"
+                  alt="Gabrijel Skokandić - Jet Wave Korčula"
+                  loading="lazy"
                 />
                 <div class="team-front-text">
                   <h3 class="team-name">Gabrijel Skokandić</h3>
@@ -213,9 +375,9 @@
         </div>
 
         <div class="team-cta" data-aos="fade-up" data-aos-delay="450">
-          <a href="#contact" class="cta-button" data-i18n="team.cta"
-            >Ride with the pros</a
-          >
+          <a href="#contact" class="cta-button" aria-label="Ride with the pros — contact Jet Wave" data-i18n="team.cta">
+            Ride with the pros
+          </a>
         </div>
       </div>
     </section>
@@ -223,7 +385,7 @@
     <!-- Jet Models Section -->
     <section id="models" class="models">
       <div class="container">
-        <h2 class="section-title" data-i18n="models.title">Our Models</h2>
+        <h2 class="section-title" aria-label="Sea‑Doo RXT‑X RS 300 in Korčula — Jet Ski Models" data-i18n="models.title">Our Jet Ski Models</h2>
 
         <!-- Desktop Carousel -->
         <div class="models-carousel" aria-label="Jet models carousel">
@@ -231,8 +393,9 @@
             <div class="carousel-image">
               <img
                 class="ride-wave smooth"
-                src="assets/models/sea-doo-rxt-x-rs300-zuti.png"
-                alt="Sea Doo RXT-X RS 300 Black & Yellow"
+                src="assets/models/sea-doo-rxt-x-rs300-yellow.webp"
+                alt="Sea Doo RXT-X RS 300 Black & Yellow in Korčula - Jet Wave"
+                loading="lazy"
               />
             </div>
             <div class="carousel-info">
@@ -250,8 +413,9 @@
             <div class="carousel-image">
               <img
                 class="ride-wave smooth"
-                src="assets/models/sea-doo-rtx-x-rs300--crni.png"
-                alt="Sea Doo RXT-X RS 300 Black"
+                src="assets/models/sea-doo-rtx-x-rs300-black.webp"
+                alt="Sea Doo RXT-X RS 300 Black in Korčula - Jet Wave"
+                loading="lazy"
               />
             </div>
             <div class="carousel-info">
@@ -268,7 +432,8 @@
               <img
                 class="ride-wave smooth"
                 src="assets/models/sea-doo-gti-se-130.webp"
-                alt="Sea Doo GTI SE 130 White"
+                alt="Sea Doo GTI SE 130 White in Korčula - Jet Wave"
+                loading="lazy"
               />
             </div>
             <div class="carousel-info">
@@ -286,8 +451,9 @@
             <div class="jet-image">
               <img
                 class="ride-wave smooth"
-                src="assets/models/sea-doo-rxt-x-rs300-zuti.png"
-                alt="Sea Doo RXT-X RS 300 Black & Yellow"
+                src="assets/models/sea-doo-rxt-x-rs300-yellow.webp"
+                alt="Sea Doo RXT-X RS 300 Black & Yellow in Korčula - Jet Wave"
+                loading="lazy"
               />
             </div>
             <div class="jet-info">
@@ -305,8 +471,9 @@
             <div class="jet-image">
               <img
                 class="ride-wave smooth"
-                src="assets/models/sea-doo-rtx-x-rs300--crni.png"
-                alt="Sea Doo RXT-X RS 300 Black"
+                src="assets/models/sea-doo-rtx-x-rs300-black.webp"
+                alt="Sea Doo RXT-X RS 300 Black in Korčula - Jet Wave"
+                loading="lazy"
               />
             </div>
             <div class="jet-info">
@@ -323,7 +490,8 @@
               <img
                 class="ride-wave smooth"
                 src="assets/models/sea-doo-gti-se-130.webp"
-                alt="Sea Doo GTI SE 130 White"
+                alt="Sea Doo GTI SE 130 White in Korčula - Jet Wave"
+                loading="lazy"
               />
             </div>
             <div class="jet-info">
@@ -340,7 +508,7 @@
     <!-- Prices Section -->
     <section id="prices" class="prices">
       <div class="container">
-        <h2 class="section-title" data-aos="fade-up" data-i18n="prices.title">
+        <h2 class="section-title" aria-label="Jet Ski Prices & Information - Korčula" data-aos="fade-up" data-i18n="prices.title">
           Prices & Information
         </h2>
         <div class="prices-grid" data-aos="fade-up" data-aos-delay="200">
@@ -411,7 +579,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="section-title" data-aos="fade-up" data-i18n="contact.title">
+        <h2 class="section-title" aria-label="Contact Jet Wave Korčula - Jet Ski & Boat Rental" data-aos="fade-up" data-i18n="contact.title">
           Contact Us
         </h2>
         <div class="contact-content">
@@ -461,7 +629,7 @@
               <div>
                 <p>
                   <a
-                    href="https://maps.app.goo.gl/nhY7XwuD5RAfo6P38"
+                    href="https://maps.app.goo.gl/NkKpFp4m7cCSvDSW9"
                     target="_blank"
                     >Put Sv. Nikole 38</a
                   >
@@ -483,7 +651,7 @@
           </div>
           <div class="map-container" data-aos="fade-left">
             <iframe
-              src="https://www.google.com/maps?q=La+Banya+Korčula&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.388259674645!2d17.126118655684476!3d42.95989706872585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134a510008485231%3A0x309946253bd91321!2sJetwave%20Korcula%20-%20Jet%20Ski%20%26%20boat%20rental!5e0!3m2!1sen!2sen!4v1755181097173!5m2!1sen!2sen"
               width="100%"
               height="360"
               style="border: 0"

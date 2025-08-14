@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jetwavekorcula.com/sitemap.xml
