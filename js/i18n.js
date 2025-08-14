@@ -96,9 +96,9 @@ const i18n = {
           title: "The Captain of Adrenaline",
           bio: "When you sit on one of our jet skis, you’ll feel both the thrill and the safety of having someone by your side who truly lives the sea. Filip – or Fila, as everyone calls him – graduated in kinesiology and has been dominating the water polo arena for KPK for years. His passion for sport and the ocean flows directly into Jet Wave, where he gives every rider clear instructions and the confidence to get the most out of their ride. And when he’s not chasing waves, you’ll find him aiming for bullseyes at the dartboard – always with that same winning spirit.",
         },
-        gabrijel: {
+        gabriel: {
           title: "The Master of the Waves",
-          bio: "For Gabrijel, the sea is not just a hobby – it’s a calling. A student at VERN University in Zagreb, a licensed skipper, and a seasoned guide, Gabrijel knows every cove, every hidden beach, and every sea tale of Korčula. He has led everything from intimate private tours to high-adrenaline adventures. With years of experience navigating speedboats and yachts, you’ll be in expert hands as he shows you the coast from a perspective you’ve always dreamed of.",
+          bio: "For Gabriel, the sea is not just a hobby – it’s a calling. A student at VERN University in Zagreb, a licensed skipper, and a seasoned guide, Gabriel knows every cove, every hidden beach, and every sea tale of Korčula. He has led everything from intimate private tours to high-adrenaline adventures. With years of experience navigating speedboats and yachts, you’ll be in expert hands as he shows you the coast from a perspective you’ve always dreamed of.",
         },
         cta: "Ride with the pros",
         why: {
@@ -208,9 +208,9 @@ const i18n = {
           title: "Kapetan adrenalina",
           bio: "Kad sjedneš na jedan od naših jet skija, osjetit ćeš i uzbuđenje i sigurnost uz nekoga tko uistinu živi more. Filip – ili Fila, kako ga svi zovu – diplomirao je kineziologiju i godinama dominira vaterpolskim bazenima kao igrač KPK-a. Njegova strast prema sportu i moru prelijeva se izravno u Jet Wave, gdje svakom vozaču daje jasne upute i samopouzdanje da izvuče maksimum iz vožnje. A kad ne juri valove, pronaći ćeš ga kako gađa “bul” na pikadu – uvijek s istim pobjedničkim stavom.",
         },
-        gabrijel: {
+        gabriel: {
           title: "Gospodar valova",
-          bio: "Za Gabrijela more nije samo hobi – to je poziv. Student VERN-a u Zagrebu, licencirani skiper i iskusni vodič, Gabrijel poznaje svaku uvalu, svaku skrivenu plažu i svaku morsku priču Korčule. Vodio je sve – od intimnih privatnih tura do adrenalinskih avantura. S godinama iskustva u upravljanju gliserima i jahtama, bit ćeš u sigurnim rukama dok ti pokazuje obalu iz perspektive o kojoj si oduvijek sanjao.",
+          bio: "Za Gabriela more nije samo hobi – to je poziv. Student VERN-a u Zagrebu, licencirani skiper i iskusni vodič, Gabriel poznaje svaku uvalu, svaku skrivenu plažu i svaku morsku priču Korčule. Vodio je sve – od intimnih privatnih tura do adrenalinskih avantura. S godinama iskustva u upravljanju gliserima i jahtama, bit ćeš u sigurnim rukama dok ti pokazuje obalu iz perspektive o kojoj si oduvijek sanjao.",
         },
         cta: "Zajaši val s profesionalcima",
         why: {
