@@ -8,7 +8,7 @@ AOS.init({
   duration: 800,
   easing: "ease-out",
   once: true,
-  offset: 100,
+  offset: -100,
 });
 
 // Mobile Navigation Toggle
@@ -18,6 +18,7 @@ const navBackdrop = document.getElementById("navBackdrop");
 
 if (hamburger) {
   hamburger.addEventListener("click", () => {
+    console.log("hamburger clicked");
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     document.body.classList.toggle(
@@ -36,6 +37,7 @@ if (hamburger) {
 const navLinks = document.querySelectorAll(".nav-menu a");
 navLinks.forEach((link) => {
   const handler = (ev) => {
+    console.log("link", link);
     const href = link.getAttribute("href") || "";
     const isAnchor = href.startsWith("#") && href.length > 1;
     if (!isAnchor) return; // let external links work normally
@@ -262,6 +264,7 @@ let modelsTop = 0;
 let modelsHeight = 1;
 const modelsSection = document.getElementById("models");
 const heroBackgroundEl = document.querySelector(".hero-background");
+const heroScrollIndicator = document.querySelector(".scroll-indicator");
 
 function recomputeModelsMetrics() {
   if (modelsSection) {
@@ -295,9 +298,19 @@ function updateActiveModel() {
   });
 }
 
+function updateScrollIndicator() {
+  if (!heroScrollIndicator) return;
+  if (window.pageYOffset <= 50) {
+    heroScrollIndicator.classList.remove("hidden");
+  } else {
+    heroScrollIndicator.classList.add("hidden");
+  }
+}
+
 function runScrollEffects() {
   applyParallax();
   updateActiveModel();
+  updateScrollIndicator();
   scrollScheduled = false;
 }
 
@@ -324,6 +337,7 @@ window.addEventListener("resize", () => {
 window.addEventListener("load", () => {
   recomputeModelsMetrics();
   runScrollEffects();
+  updateScrollIndicator();
 });
 
 // CTA button click handler

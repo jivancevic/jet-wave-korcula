@@ -49,6 +49,9 @@ h3,
   font-family: "Garosia", "Inter", sans-serif;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
 /* Hero slogan */
 .hero-slogan {
   margin: 10px 0 18px;
@@ -331,6 +334,11 @@ h3,
   color: var(--white);
   font-size: 1.5rem;
   animation: bounce 2s infinite;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.scroll-indicator.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 @keyframes bounce {
@@ -564,7 +572,7 @@ h3,
 @media (max-width: 900px) {
   .prices {
     padding: 50px 0;
-  } 
+  }
 }
 
 .prices .section-title {
@@ -574,7 +582,6 @@ h3,
 .prices-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
   margin-bottom: 40px;
 }
 
@@ -583,6 +590,7 @@ h3,
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 30px;
+  margin: 15px 15px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
@@ -747,7 +755,7 @@ h3,
 @media (max-width: 900px) {
   .contact {
     padding: 50px 0;
-  } 
+  }
 }
 
 .contact-header {
@@ -780,21 +788,26 @@ h3,
 
 /* Details column */
 .contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
   height: 100%;
 }
 
 .contact-item {
-  background: transparent;
-  border: 0;
-  padding: 12px 0;
-  align-items: flex-start;
+  padding: 16px 16px;
+  border-radius: 12px;
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.contact-item > div {
+  flex: 1;
 }
 
 .contact-item i {
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   color: #fff;
   margin-top: 4px;
 }
@@ -803,6 +816,7 @@ h3,
 .contact-item p,
 .contact-item a {
   color: #fff;
+  font-size: 1.2rem;
 }
 
 .contact-item a {
@@ -810,7 +824,8 @@ h3,
   border-bottom: 1px solid transparent;
 }
 .contact-item a:hover {
-  border-bottom-color: rgba(255, 255, 255, 0.5);
+  color: #87ceeb;
+  border-bottom-color: transparent;
 }
 
 /* Map column fills height */
@@ -848,6 +863,9 @@ h3,
 
 @media (max-width: 900px) {
   .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .contact-details {
     grid-template-columns: 1fr;
   }
   .map-container {
@@ -895,6 +913,32 @@ h3,
   padding-top: 20px;
   border-top: 1px solid #333;
   color: var(--gray-dark);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-copy {
+  text-align: left;
+}
+.footer-dev {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .footer-dev {
+    order: 0;
+    text-align: center;
+  }
+  .footer-copy {
+    order: 1;
+    text-align: center;
+  }
 }
 
 /* Responsive Design */
@@ -981,11 +1025,11 @@ h3,
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .models-grid {
@@ -1096,7 +1140,7 @@ h3,
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
-  gap: 30px;
+  gap: 15px;
 }
 
 .team-card.flip {
@@ -1128,12 +1172,15 @@ h3,
   border: 1px solid #151b24;
   display: grid;
   grid-template-rows: calc(100% - 56px) 56px;
+  align-items: center; /* center items within their grid rows */
 }
 
 .team-photo {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center center; /* ensure vertical centering within crop */
+  align-self: center; /* vertically center within first grid row */
   background: #0f1319;
 }
 
@@ -1152,6 +1199,8 @@ h3,
   flex-direction: column;
   gap: 10px;
   padding: 18px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .team-card.flip:hover .flip-inner {
@@ -1164,7 +1213,21 @@ h3,
     grid-template-columns: 1fr;
   }
   .flip-inner {
-    height: 420px;
+    height: 480px;
+  }
+  .team-bio {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 650px) {
+  .team-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.5 / 1;
+    object-position: center center; /* keep centered on mobile as well */
+    align-self: center;
   }
 }
 
@@ -1179,6 +1242,10 @@ h3,
 }
 .team-why p {
   color: var(--gray-dark);
+}
+
+.team-card h3 {
+  font-family: "Saira", "Inter", sans-serif;
 }
 
 .team-card {
@@ -1474,8 +1541,8 @@ body.no-scroll {
   .nav-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 2000;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
