@@ -480,7 +480,7 @@ h2 {
 
 /* Models Section */
 .models {
-  padding: 50px 0;
+  padding: 0 0 50px 0;
   background: #090b0e;
 }
 
@@ -489,6 +489,10 @@ h2 {
   font-size: 2.5rem;
   color: var(--sea-blue);
   margin-bottom: 60px;
+}
+
+.models .section-title {
+  margin-bottom: 30px;
 }
 
 .models-grid {
@@ -1359,6 +1363,8 @@ h2 {
   width: 100%;
   height: auto;
   display: block;
+  transition: filter 0.25s ease, transform 0.25s ease;
+  will-change: transform;
 }
 .carousel-item .carousel-info {
   text-align: center;
@@ -1445,6 +1451,30 @@ h2 {
   100% {
     transform: translateY(0) rotate(0deg);
   }
+}
+
+/* Hover bounce for center carousel item */
+@keyframes hoverBob {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ride-wave.hover-bounce {
+  /* layer bounce on top of existing wave animation */
+  animation: waveRideSmooth 4.6s ease-in-out infinite,
+    hoverBob 1.4s ease-in-out infinite;
+}
+
+/* Optional subtle emphasis on hover */
+.carousel-item:hover .carousel-image img {
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.35));
 }
 
 /* Responsive switches */

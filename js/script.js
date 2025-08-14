@@ -457,7 +457,8 @@ images.forEach((img) => imageObserver.observe(img));
     items.forEach((item) => {
       item.classList.remove("left", "center", "right");
       item.style.zIndex = "1";
-      item.style.pointerEvents = "none";
+      item.style.pointerEvents = "auto"; // allow clicks on all items
+      item.style.cursor = "pointer";
     });
     const left = (focusIndex + 2) % 3;
     const center = focusIndex % 3;
@@ -484,14 +485,30 @@ images.forEach((img) => imageObserver.observe(img));
 
   applyPositions();
 
-  // Pause on hover of center item
-  carousel.addEventListener("mouseenter", (e) => {
-    const center = items[focusIndex % 3];
-    if (e.target === center || center.contains(e.target)) stopRotation();
-  });
-  carousel.addEventListener("mouseleave", () => {
-    const mq = window.matchMedia("(min-width: 901px)");
-    if (mq.matches) startRotation();
+  const mq = window.matchMedia("(min-width: 901px)");
+  // Pause on hover of center item + hover-bounce for all
+  items.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      if (mq.matches) {
+        // Pause only if center
+        if (item.classList.contains("center")) {
+          stopRotation();
+        }
+        // Add hover-bounce to the hovered item's image
+        const img = item.querySelector(".carousel-image img");
+        if (img) img.classList.add("hover-bounce");
+      }
+    });
+    item.addEventListener("mouseleave", () => {
+      if (mq.matches) {
+        // Resume rotation when leaving the center
+        if (item.classList.contains("center")) {
+          startRotation();
+        }
+        const img = item.querySelector(".carousel-image img");
+        if (img) img.classList.remove("hover-bounce");
+      }
+    });
   });
 
   // Click on side items to focus them
@@ -501,10 +518,10 @@ images.forEach((img) => imageObserver.observe(img));
       if (idx === centerIdx) return;
       focusIndex = idx;
       applyPositions();
+      if (mq.matches) stopRotation();
     });
   });
 
-  const mq = window.matchMedia("(min-width: 901px)");
   function handleMQ(e) {
     if (e.matches) startRotation();
     else stopRotation();
