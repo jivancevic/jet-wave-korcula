@@ -298,12 +298,43 @@ function updateActiveModel() {
   });
 }
 
+// Scroll indicator timing variables
+let scrollIndicatorTimeout = null;
+let isAtTop = false;
+
 function updateScrollIndicator() {
   if (!heroScrollIndicator) return;
-  if (window.pageYOffset <= 50) {
-    heroScrollIndicator.classList.remove("hidden");
-  } else {
-    heroScrollIndicator.classList.add("hidden");
+
+  const currentlyAtTop = window.pageYOffset <= 50;
+
+  if (currentlyAtTop && !isAtTop) {
+    // Just arrived at top - start 2 second timer
+    isAtTop = true;
+
+    // Clear any existing timeout
+    if (scrollIndicatorTimeout) {
+      clearTimeout(scrollIndicatorTimeout);
+    }
+
+    // Set 2 second delay before showing with smooth fade-in
+    scrollIndicatorTimeout = setTimeout(() => {
+      if (isAtTop && window.pageYOffset <= 50) {
+        // Force a reflow to ensure transition triggers
+        heroScrollIndicator.offsetHeight;
+        // Trigger the smooth fade-in transition
+        heroScrollIndicator.classList.add("visible");
+      }
+    }, 2000);
+  } else if (!currentlyAtTop && isAtTop) {
+    // Just scrolled away from top - hide with smooth fade-out
+    isAtTop = false;
+    heroScrollIndicator.classList.remove("visible");
+
+    // Clear the timeout since we're no longer at top
+    if (scrollIndicatorTimeout) {
+      clearTimeout(scrollIndicatorTimeout);
+      scrollIndicatorTimeout = null;
+    }
   }
 }
 
@@ -337,7 +368,23 @@ window.addEventListener("resize", () => {
 window.addEventListener("load", () => {
   recomputeModelsMetrics();
   runScrollEffects();
-  updateScrollIndicator();
+
+  // Initialize scroll indicator state on page load
+  if (window.pageYOffset <= 50) {
+    isAtTop = true;
+    if (heroScrollIndicator) {
+      // Ensure it starts hidden (CSS default)
+      heroScrollIndicator.classList.remove("visible");
+      // Start the 2 second timer for initial display with smooth fade-in
+      scrollIndicatorTimeout = setTimeout(() => {
+        if (isAtTop && window.pageYOffset <= 50) {
+          // Force a reflow to ensure transition triggers
+          heroScrollIndicator.offsetHeight;
+          heroScrollIndicator.classList.add("visible");
+        }
+      }, 2000);
+    }
+  }
 });
 
 // CTA button click handler

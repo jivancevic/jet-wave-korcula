@@ -94,7 +94,7 @@ const i18n = {
         title: "Our Team",
         filip: {
           title: "The Captain of Adrenaline",
-          bio: "When you sit on one of our jet skis, you’ll feel both the thrill and the safety of having someone by your side who truly lives the sea. Filip – or Fila, as everyone calls him – graduated in kinesiology and has been dominating the water polo arena for KPK for years. His passion for sport and the ocean flows directly into Jet Wave, where he gives every rider clear instructions and the confidence to get the most out of their ride. And when he’s not chasing waves, you’ll find him aiming for bullseyes at the dartboard – always with that same winning spirit.",
+          bio: "Hop on one of our jet skis and you’ll feel both the thrill and the safety of having Filip – or Fila, as everyone calls him – by your side. A kinesiology graduate and long-time KPK water polo player, his passion for sport and the sea flows into every ride, giving you clear guidance and confidence on the water. Off the waves, Fila’s energy shines through in his many talents – from dartboard bullseyes to massage therapy and years of professional waitering.",
         },
         gabriel: {
           title: "The Master of the Waves",
@@ -111,15 +111,6 @@ const i18n = {
       footer: {
         tagline: "Jet Ski Rental in Korčula",
         rights: "All rights reserved.",
-      },
-
-      // Form validation
-      validation: {
-        required: "Please fill in all fields.",
-        invalidEmail: "Please enter a valid email address.",
-        sending: "Sending message...",
-        success: "Message sent successfully! We will contact you soon.",
-        error: "Error sending message. Please try again.",
       },
     },
 
@@ -206,7 +197,7 @@ const i18n = {
         title: "Naš Tim",
         filip: {
           title: "Kapetan adrenalina",
-          bio: "Kad sjedneš na jedan od naših jet skija, osjetit ćeš i uzbuđenje i sigurnost uz nekoga tko uistinu živi more. Filip – ili Fila, kako ga svi zovu – diplomirao je kineziologiju i godinama dominira vaterpolskim bazenima kao igrač KPK-a. Njegova strast prema sportu i moru prelijeva se izravno u Jet Wave, gdje svakom vozaču daje jasne upute i samopouzdanje da izvuče maksimum iz vožnje. A kad ne juri valove, pronaći ćeš ga kako gađa “bul” na pikadu – uvijek s istim pobjedničkim stavom.",
+          bio: "Kad sjednete na jedan od naših jet skijeva, odmah ćete osjetiti uzbuđenje, ali i sigurnost uz Filipa – ili Filu, kako ga svi znaju. Diplomirani kineziolog i dugogodišnji vaterpolist KPK-a svoju strast prema sportu i moru prenosi na svaku vožnju, dajući jasne upute i sigurnost na vodi. Kad nije na valovima, Fila se posvećuje drugim vještinama – od gađanja „u sridu” na pikadu, preko masaža, do rada u ugostiteljstvu u kojem ima višegodišnje iskustvo.",
         },
         gabriel: {
           title: "Gospodar valova",
@@ -223,15 +214,6 @@ const i18n = {
       footer: {
         tagline: "Najam jet skija u Korčuli",
         rights: "Sva prava pridržana.",
-      },
-
-      // Form validation
-      validation: {
-        required: "Molimo popunite sva polja.",
-        invalidEmail: "Molimo unesite ispravnu email adresu.",
-        sending: "Poruka se šalje...",
-        success: "Poruka je uspješno poslana! Kontaktirat ćemo vas uskoro.",
-        error: "Greška pri slanju poruke. Molimo pokušajte ponovo.",
       },
     },
   },

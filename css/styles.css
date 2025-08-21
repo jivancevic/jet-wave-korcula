@@ -334,11 +334,17 @@ h2 {
   color: var(--white);
   font-size: 1.5rem;
   animation: bounce 2s infinite;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
-}
-.scroll-indicator.hidden {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.8s ease-in-out visibility 0s linear 0.8s;
+}
+
+.scroll-indicator.visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.8s ease-in-out, visibility 0s;
 }
 
 @keyframes bounce {
