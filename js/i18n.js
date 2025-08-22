@@ -27,6 +27,7 @@ const i18n = {
         title: "Jet Wave",
         subtitle: "Jet Ski Rental in Korčula",
         cta: "Book Now",
+        slogan: "Experience the Adriatic in Style",
       },
 
       // About Section
@@ -62,6 +63,26 @@ const i18n = {
         onRequest: "On request",
         mostPopular: "Most Popular",
         insurance: "All jet skis are fully insured.",
+        features: {
+          thirty: {
+            quick:
+              "Perfect for a quick adrenaline rush and testing the jet skis",
+            beginner: "Great for beginners who want to experience the ride",
+            coast:
+              "A short tour around the most beautiful parts of the coastline",
+          },
+          hour: {
+            explore: "Plenty of time to explore multiple bays and beaches",
+            balance:
+              "Ideal for combining high‑speed fun with moments of relaxation",
+            freedom: "More freedom to create your own route",
+          },
+          custom: {
+            extended: "Extended rides for a full exploration experience",
+            private: "Option for private tours and visits to hidden locations",
+            flexible: "Flexible schedule tailored to your wishes and plans",
+          },
+        },
       },
 
       // Location Section
@@ -130,6 +151,7 @@ const i18n = {
         title: "Jet Wave",
         subtitle: "Najam jet skija u Korčuli",
         cta: "Rezerviraj",
+        slogan: "Doživi Jadran sa stilom",
       },
 
       // About Section
@@ -161,10 +183,28 @@ const i18n = {
         title: "Cijene i Informacije",
         thirtyMin: "30 minuta",
         oneHour: "1 sat",
-        custom: "Prilagođeno",
+        custom: "Posebno",
         onRequest: "Na upit",
         mostPopular: "Najpopularnije",
         insurance: "Svi jet skiji su potpuno osigurani.",
+        features: {
+          thirty: {
+            quick: "Savršeno za brzi adrenalin i testiranje jet skija",
+            beginner: "Odlično za početnike koji žele doživjeti vožnju",
+            coast: "Kratka tura oko najljepših dijelova obale",
+          },
+          hour: {
+            explore: "Dovoljno vremena za istraživanje više uvala i plaža",
+            balance: "Idealno za kombinaciju brzine i trenutaka opuštanja",
+            freedom: "Više slobode za kreiranje vlastite rute",
+          },
+          custom: {
+            extended: "Produžene vožnje za potpuno istraživanje",
+            private: "Opcija privatnih tura i posjeta skrivenim lokacijama",
+            flexible:
+              "Fleksibilan raspored prilagođen vašim željama i planovima",
+          },
+        },
       },
 
       // Location Section
