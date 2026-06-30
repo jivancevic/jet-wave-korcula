@@ -1,0 +1,15 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Secrets — none today (pure static site, see docs/adr/0002), guard anyway
+.env
+.env.*
+!.env.example
+
+# Stray archives / handoff zips
+*.zip
