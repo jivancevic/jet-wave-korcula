@@ -1529,8 +1529,8 @@ h2 {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 14px;
-  box-shadow: var(--shadow);
+  /* transparent cut-outs: float with an alpha-aware shadow (not a box) */
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.45));
 }
 .gliser-info h3 {
   color: var(--sea-blue);
