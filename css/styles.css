@@ -1347,8 +1347,10 @@ h2 {
 .models-carousel {
   display: none;
   position: relative;
-  height: 520px;
-  margin-top: 20px;
+  /* tall enough to contain the absolutely-positioned center item (image +
+     info) so it doesn't overflow onto the Speedboat sub-section below */
+  height: 620px;
+  margin: 20px 0 10px;
 }
 
 .carousel-item {
@@ -1498,6 +1500,52 @@ h2 {
   }
   .models-stacked {
     display: grid;
+  }
+}
+
+/* Models sub-section headings (Jet Skis / Speedboat) */
+.models-subtitle {
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--sea-blue);
+  margin: 24px 0 0;
+}
+
+/* Speedboat (gliser) feature */
+.gliser-feature {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 24px auto 0;
+}
+.gliser-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.gliser-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.gliser-info h3 {
+  color: var(--sea-blue);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.gliser-info .model-specs {
+  color: var(--gray-dark);
+  margin-bottom: 5px;
+}
+@media (max-width: 700px) {
+  .gliser-feature {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
   }
 }
 

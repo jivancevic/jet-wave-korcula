@@ -34,24 +34,28 @@ const i18n = {
       about: {
         title: "About Jet Wave",
         description:
-          "Jet Wave is an adventure center for jet ski rental in Korčula, with locations in La Banya and Put Sv. Nikole 38. Our offer includes top-quality Sea-Doo jet ski models and a speedboat, ready for your sea adventure. With professional service and the beautiful nature of Korčula, Jet Wave guarantees an unforgettable experience.",
+          "Jet Wave is an adventure center for jet ski and speedboat rental in Korčula, based at La Banya. Our offer includes top-quality Sea-Doo jet ski models and a speedboat, ready for your sea adventure. With professional service and the beautiful nature of Korčula, Jet Wave guarantees an unforgettable experience.",
       },
 
       // Models Section
       models: {
         title: "Our Models",
-        seaDooRXTX300: "Sea Doo RXT-X RS 300",
-        seaDooGTI130: "Sea Doo GTI 130",
-        speedboat: "Speedboat",
-        year: "2023",
-        blackYellow: "Black & Yellow",
-        black: "Black",
+        jetSkisTitle: "Jet Skis",
+        gliserTitle: "Speedboat",
+        spark3up: "Sea-Doo Spark 3UP",
+        gti130se: "Sea-Doo GTI 130 SE",
+        gtx130pro: "Sea-Doo GTX 130 Pro",
+        ideaMarine58: "Idea Marine 58",
         white: "White",
-        comingSoon: "Coming Soon",
+        green: "Green",
+        cyan: "Cyan",
         specs: {
-          rxtx300: "1630cc, 300 HP",
-          gti130: "130 HP",
+          spark3up: "900cc, 90 HP",
+          gti130se: "1500cc, 135 HP",
+          gtx130pro: "1600cc, 130 HP",
         },
+        gliserMotor: "Yamaha 115 HP engine",
+        gliserSeats: "Registered for 7 people",
       },
 
       // Prices Section
@@ -59,7 +63,7 @@ const i18n = {
         title: "Prices & Information",
         thirtyMin: "30 minutes",
         oneHour: "1 hour",
-        custom: "Custom",
+        dailyRent: "Daily rent",
         onRequest: "On request",
         mostPopular: "Most Popular",
         insurance: "All jet skis are fully insured.",
@@ -77,10 +81,11 @@ const i18n = {
               "Ideal for combining high‑speed fun with moments of relaxation",
             freedom: "More freedom to create your own route",
           },
-          custom: {
-            extended: "Extended rides for a full exploration experience",
-            private: "Option for private tours and visits to hidden locations",
-            flexible: "Flexible schedule tailored to your wishes and plans",
+          dailyRent: {
+            fullDay:
+              "Full-day rental, ideal for the speedboat and the whole crew",
+            archipelago: "Explore Korčula's archipelago at your own pace",
+            tailored: "Price on request, tailored to your plans",
           },
         },
       },
@@ -89,7 +94,6 @@ const i18n = {
       location: {
         title: "Location & Hours",
         laBanya: "La Banya",
-        putSvNikole: "Put Sv. Nikole 38",
         korcula: "Korčula, Croatia",
         workingHours: "Working Hours",
         hours: "08:00 - 20:00",
@@ -158,24 +162,28 @@ const i18n = {
       about: {
         title: "O Jet Wave",
         description:
-          "Jet Wave je avanturistički centar za najam jet skija u Korčuli, s lokacijama u La Banya i Put Sv. Nikole 38. Naša ponuda uključuje vrhunske Sea-Doo modele jet skija i gliser, spremne za tvoju morsku avanturu. Uz profesionalnu uslugu i predivnu prirodu Korčule, Jet Wave garantira doživljaj koji se pamti.",
+          "Jet Wave je avanturistički centar za najam jet skijeva i glisera u Korčuli, smješten na La Banyi. Naša ponuda uključuje vrhunske Sea-Doo modele jet skijeva i gliser, spremne za tvoju morsku avanturu. Uz profesionalnu uslugu i predivnu prirodu Korčule, Jet Wave garantira doživljaj koji se pamti.",
       },
 
       // Models Section
       models: {
         title: "Naši Modeli",
-        seaDooRXTX300: "Sea Doo RXT-X RS 300",
-        seaDooGTI130: "Sea Doo GTI 130",
-        speedboat: "Gliser",
-        year: "2023",
-        blackYellow: "Crna & Žuta",
-        black: "Crna",
+        jetSkisTitle: "Jet skijevi",
+        gliserTitle: "Gliser",
+        spark3up: "Sea-Doo Spark 3UP",
+        gti130se: "Sea-Doo GTI 130 SE",
+        gtx130pro: "Sea-Doo GTX 130 Pro",
+        ideaMarine58: "Idea Marine 58",
         white: "Bijela",
-        comingSoon: "Dolazi uskoro",
+        green: "Zelena",
+        cyan: "Cijan",
         specs: {
-          rxtx300: "1630cc, 300 KS",
-          gti130: "130 KS",
+          spark3up: "900cc, 90 KS",
+          gti130se: "1500cc, 135 KS",
+          gtx130pro: "1600cc, 130 KS",
         },
+        gliserMotor: "Yamaha 115 KS motor",
+        gliserSeats: "Registriran za 7 osoba",
       },
 
       // Prices Section
@@ -183,7 +191,7 @@ const i18n = {
         title: "Cijene i Informacije",
         thirtyMin: "30 minuta",
         oneHour: "1 sat",
-        custom: "Posebno",
+        dailyRent: "Dnevni najam",
         onRequest: "Na upit",
         mostPopular: "Najpopularnije",
         insurance: "Svi jet skiji su potpuno osigurani.",
@@ -198,11 +206,10 @@ const i18n = {
             balance: "Idealno za kombinaciju brzine i trenutaka opuštanja",
             freedom: "Više slobode za kreiranje vlastite rute",
           },
-          custom: {
-            extended: "Produžene vožnje za potpuno istraživanje",
-            private: "Opcija privatnih tura i posjeta skrivenim lokacijama",
-            flexible:
-              "Fleksibilan raspored prilagođen vašim željama i planovima",
+          dailyRent: {
+            fullDay: "Cjelodnevni najam, idealno za gliser i cijelu ekipu",
+            archipelago: "Istraži korčulanski arhipelag svojim tempom",
+            tailored: "Cijena na upit, prilagođena tvojim planovima",
           },
         },
       },
@@ -211,7 +218,6 @@ const i18n = {
       location: {
         title: "Lokacija i Radno Vrijeme",
         laBanya: "La Banya",
-        putSvNikole: "Put Sv. Nikole 38",
         korcula: "Korčula, Hrvatska",
         workingHours: "Radno Vrijeme",
         hours: "08:00 - 20:00",

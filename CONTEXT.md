@@ -17,13 +17,16 @@ The secondary rental product, distinct from a jet ski. HR: _gliser_.
 _Avoid_: boat (too generic), yacht
 
 **Model**:
-A specific machine in the fleet. Current fleet: **Sea-Doo RXT-X RS 300** (the 1630cc / 300 HP flagship, present in a black-and-yellow and a black unit), **Sea-Doo GTI 130** (the 130 HP entry model), and a **Speedboat** (marked "coming soon").
+A specific machine in the fleet. The fleet is presented in two sub-sections — **Jet Skis** and **Speedboat**. Current jet skis: **Sea-Doo Spark 3UP** (2016, white, 900cc / 90 HP), **Sea-Doo GTI 130 SE** (2018, green, 1500cc / 135 HP), **Sea-Doo GTX 130 Pro** (2025, cyan, 1600cc / 130 HP). Speedboat: **Idea Marine 58** (Yamaha 115 HP, registered for 7 people). The earlier RXT-X RS 300 / GTI 130 jet skis have been retired from the site.
+
+**Jet car**:
+A future product — a jet-ski styled as a sports car (the planned units: two **LaFerrari Aperta**, 2025, yellow & red, 1630cc / 170 HP). **Held off the live site on purpose**: the business has no rental permits for jet cars yet, so they are deferred to a later version (no "first in Croatia" claim until then). Specs kept here so they're ready to add.
 
 **Location**:
-One of the two physical pickup points in Korčula: **La Banya** and **Put Sv. Nikole 38**. Both belong to the one business — they are pickup points, not separate branches with separate branding.
+The single physical pickup point in Korčula: **La Banya**. (A former second point, _Put Sv. Nikole 38_, was dropped — the business now operates from La Banya only.)
 
 **Rental tier**:
-A pricing/duration option, not a product. Three tiers: **30 minutes** (€80), **1 hour** (€150, the "Most Popular" / _Najpopularnije_ tier), and **Custom** (on request / _Na upit_).
+A pricing/duration option, not a product. Three tiers: **30 minutes** (€80), **1 hour** (€140, the "Most Popular" / _Najpopularnije_ tier), and **Daily rent** (on request / _Na upit_ — primarily the speedboat).
 
 **Booking**:
 A customer request to rent. Handled off-site (WhatsApp / Instagram / phone) — there is no online booking engine. The "Book Now" CTA points the visitor at contact channels, it does not transact. See [[adr-0002-static-tier-no-backend]].
@@ -36,12 +39,12 @@ The site is bilingual: **EN** is primary/default, **HR** (Croatian) is the secon
 
 ## Relationships
 
-- The **business** (Jet Wave) operates from two **Locations** and is run by a two-person **Team**.
+- The **business** (Jet Wave) operates from one **Location** (La Banya) and is run by a two-person **Team**.
 - The fleet contains several **Models**; a **Booking** is for a Model at a **Rental tier**.
 - Every user-facing string exists in both **Locales** (EN + HR) — the two must stay in sync.
 
 ## Flagged ambiguities
 
 - "Rental" vs "hire" — the old README used both. Canonical English is **rental**.
-- "La Banya" and "Put Sv. Nikole 38" read like two businesses but are **one** business with two pickup points. Don't model them as separate brands (contrast with a genuinely-split brand, which would warrant a repo-boundary ADR — that is not the case here).
 - Speedboat is a distinct **product** from the jet skis; don't fold it under "jet ski".
+- **Jet cars** appear in meeting briefs but are **not** live on the site yet (no permits). If a brief says "add jet cars", confirm permit status before publishing — they stay deferred until then.
