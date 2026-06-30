@@ -1521,9 +1521,8 @@ h2 {
   margin: 24px auto 0;
 }
 .gliser-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  display: flex;
+  justify-content: center;
 }
 .gliser-gallery img {
   width: 100%;
